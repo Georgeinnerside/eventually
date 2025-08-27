@@ -1,5 +1,13 @@
+import Hero from "@/components/component/Hero";
+import Reasons from "@/components/component/Reasons";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Hero />
+      <Reasons />
+    </>
+  );
 };
 
 export default Home;
