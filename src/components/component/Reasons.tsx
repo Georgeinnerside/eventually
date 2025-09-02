@@ -49,8 +49,11 @@ const Reasons = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {reasonContent.map((r) => (
-          <Card className="flex flex-col items-center p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-            <CardHeader>
+          <Card
+            key={r.id}
+            className="flex flex-col items-center p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          >
+            <CardHeader className="flex items-center justify-center">
               <div className="bg-pink-950 p-3 rounded-full mb-2">
                 {React.cloneElement(
                   r.icon as React.ReactElement<{ className: string }>,
