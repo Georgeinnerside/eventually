@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const halls = [
   {
     name: "Grand Ballroom",
@@ -54,7 +56,10 @@ const Venues = () => {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="w-full md:w-1/2 h-[400px] md:h-[300px]">
+            <motion.div
+              animate={{ rotate: 360 }}
+              className="w-full md:w-1/2 h-[400px] md:h-[300px]"
+            >
               <img
                 src={hall.image}
                 alt={hall.name}
@@ -63,7 +68,7 @@ const Venues = () => {
                 loading="lazy"
                 className="w-full h-full rounded-none shadow-lg object-cover"
               />
-            </div>
+            </motion.div>
 
             <div className="text-center md:text-left w-full md:w-1/2">
               <h1 className="text-2xl font-bold">{hall.name}</h1>

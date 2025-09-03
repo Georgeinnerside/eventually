@@ -5,6 +5,7 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Booking from "./pages/Book";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/book" element={<Booking />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
