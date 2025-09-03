@@ -2,6 +2,7 @@ import Hero from "@/components/component/Hero";
 import Reasons from "@/components/component/Reasons";
 import Venues from "@/components/component/Venues";
 import Services from "@/components/component/Services";
+import EventType from "@/components/component/EventType";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Reasons />
       <Venues />
       <Services />
+      <EventType />
     </>
   );
 };

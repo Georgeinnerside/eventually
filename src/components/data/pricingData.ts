@@ -1,0 +1,45 @@
+export const pricingPlans = [
+  {
+    id: 1,
+    name: "Essential",
+    price: "$1,299",
+    guests: "Up to 50 guests",
+    features: [
+      "4-hour venue rental",
+      "Basic table & chair setup",
+      "Sound system included",
+      "Event coordinator",
+    ],
+    button: "Choose Essential",
+  },
+  {
+    id: 2,
+    name: "Premium",
+    price: "$2,899",
+    guests: "Up to 150 guests",
+    features: [
+      "6-hour venue rental",
+      "Premium setup & décor",
+      "Full AV equipment",
+      "Dedicated event manager",
+      "Complimentary parking",
+    ],
+    button: "Choose Premium",
+    popular: true,
+  },
+  {
+    id: 3,
+    name: "Luxury",
+    price: "$4,999",
+    guests: "Up to 300 guests",
+    features: [
+      "8-hour venue rental",
+      "Luxury decor package",
+      "Professional lighting",
+      "Personal event consultant",
+      "Valet parking service",
+      "Photography consultation",
+    ],
+    button: "Choose Luxury",
+  },
+];
