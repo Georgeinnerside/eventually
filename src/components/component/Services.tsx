@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React from "react";
 import {
   Flower2,
   Music,
